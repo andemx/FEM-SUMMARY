@@ -1,0 +1,57 @@
+.score{    
+    line-height: 20px;
+    display: inline-flex;
+    gap:6px;
+    &__first{
+        color:$dark-gray-blue;
+        font-weight:700;
+    }
+    &__separator{
+        color:grey;
+    }
+    &__second{
+        color:grey;
+    }
+    &--round{
+        width: 200px;
+        height: 200px;
+        background-image: linear-gradient($violet-blue,$persian-blue);
+        margin-top: 6px;
+        border-radius: 50%;
+        gap: 0;
+        display: grid;
+        grid-template-columns: auto 5px auto;
+        grid-template-rows: 127px 7px auto;
+        grid-template-areas:    "first first first"
+                                " . . ."
+                                "separator . second";
+
+        .score{
+            &__first{
+                align-self: end;
+                justify-self: center;
+                grid-area: first;
+                font-size:71px;
+                font-weight:800;
+                color:white;
+                line-height:1;
+            }
+            &__separator{
+                opacity:.5;
+                grid-area: separator;
+                color:$light-lavender;
+                justify-self:end;
+                align-self:start;
+                line-height:1;
+            }
+            &__second{
+                opacity:.5;
+                grid-area: second;
+                color: $light-lavender;
+                align-self:start;
+                justify-self:start;
+                line-height:1;
+            }
+        } 
+    }
+} 

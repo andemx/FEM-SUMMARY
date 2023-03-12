@@ -1,0 +1,21 @@
+html{
+    position:relative;
+    height:100%;    
+}
+body{
+    position:relative;
+    height:100%;    
+    margin:0;
+    @extend .flex,.flex--vertical;
+}
+*{
+    //all:unset;
+    box-sizing: border-box;
+    &:hover{
+        outline:none;
+    }
+}
+
+.attribution{
+    display:none;
+}

@@ -1,0 +1,54 @@
+.category{ 
+    padding:16px;
+    color:black;
+    gap:12px;
+    @extend .flex,.flex--y-end;
+    width: 100%;
+    border-radius:8px;
+    height:56px;
+    font-weight:700;
+    &__icon{
+        width:20px;
+        height:20px;
+    }
+    &__label{
+        width: 100%;
+        //display: inline-block;       
+        font-size: 1em;
+        line-height: 20px;
+        height:20px;
+    }
+    $alpha: .05;
+    &--A{
+        background-color:rgba($light-red,$alpha);
+        .category{
+            &__label{
+                color:$light-red;
+            }
+        }
+    }
+    &--B{
+        background-color:rgba($orangey-yellow,$alpha);
+        .category{
+            &__label{
+                color:$orangey-yellow;
+            }
+        }
+    }
+    &--C{
+        background-color:rgba($green-teal,$alpha);
+        .category{
+            &__label{
+                color:$green-teal;
+            }
+        }
+    }
+    &--D{
+        background-color:rgba($cobalt-blue,$alpha);
+        .category{
+            &__label{
+                color:$cobalt-blue;
+            }
+        } 
+    }
+} 

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Result Summary component</title>
+  
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="fem-app">
+    <div class="fem-rs">
+      <div class="fem-rs__pane fem-rs__pane--main">
+        <div class="fem-result__header">
+          <div class="title">Your Result</div>
+        </div>      
+        <div class="fem-result__body">
+          <div class="score score--round">
+            <div class="score__first">76</div>
+            <div class="score__separator">of</div>
+            <div class="score__second">100</div>
+          </div>
+        </div>
+        <div class="fem-result__footer">
+          <div class="title">Great</div>
+          <div class="text" style="fiont-size:18px;font-weight:500;">You scored higher than 65% of the people who have taken these tests.</div>
+        </div>
+      </div>
+      <div class="fem-rs__pane fem-summary">      
+        <div class="fem-summary__header">
+          <div class="title">Summary</div>
+        </div>
+        <div class="fem-summary__body">
+          <div class="category category--A">
+            <img src="./assets/images/icon-reaction.svg" class="category__icon"/>
+            <div class="category__label">Reaction</div>
+            <div class="score">
+              <div class="score__first">
+                80
+              </div>
+              <div class="score__separator">/</div>
+              <div class="score__second">
+                100
+              </div>
+            </div>
+          </div>
+          <div class="category category--B">
+            <img src="./assets/images/icon-memory.svg" class="category__icon"/>
+            <div class="category__label">Memory</div>
+            <div class="score">
+              <div class="score__first">
+                92
+              </div>
+              <div class="score__separator">/</div>
+              <div class="score__second">
+                100
+              </div>
+            </div>
+          </div>
+          <div class="category category--C">
+            <img src="./assets/images/icon-verbal.svg" class="category__icon"/>
+            <div class="category__label">Verbal</div>
+            <div class="score">
+              <div class="score__first">
+                61
+              </div>
+              <div class="score__separator">/</div>
+              <div class="score__second">
+                100
+              </div>
+            </div>
+          </div>
+          <div class="category category--D">
+            <img src="./assets/images/icon-visual.svg" class="category__icon"/>
+            <div class="category__label">Visual</div>
+            <div class="score">
+              <div class="score__first">
+                72  
+              </div>
+              <div class="score__separator">/</div>
+              <div class="score__second">
+                100
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="fem-summary__footer">
+          <div class="button">Continue</div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/andemx">andemx</a>.
+  </div>
+</body>
+</html>

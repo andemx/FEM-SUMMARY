@@ -1,0 +1,17 @@
+.button{        
+    //display:inline-block;
+    padding: 16px;
+    font-weight: 700;
+    background-color: $dark-blue;
+    color:white;
+    text-align: center;
+    border-radius: 32px;
+    line-height:24px;
+    cursor:pointer;
+   /* &--full{
+        width:100%;
+    }*/
+    &:hover{
+        background-image: linear-gradient($light-slate-blue, $light-royal-blue);
+    }
+} 

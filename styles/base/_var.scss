@@ -1,0 +1,61 @@
+$customer: "fem";
+$prefix: #{$customer};
+
+//color ---------------------------------------------------------------------------------
+$white: #ffffff;
+$light-gray: #d6e2f0;
+$grayish-blue: #7b879d;
+$dark-blue: #1f3251;
+
+//primary
+$light-red: hsl(0, 100%, 67%);
+$orangey-yellow: hsl(39, 100%, 56%);
+$green-teal: hsl(166, 100%, 37%);
+$cobalt-blue: hsl(234, 85%, 45%);
+
+//neutral
+$white: hsl(0, 0%, 100%);
+$pale-blue: #ebf1ff;
+$light-lavender: #c8c7ff;
+$dark-gray-blue: #303b5a;
+
+//gradient
+$light-slate-blue: hsl(252, 100%, 67%); //background
+$light-royal-blue: hsl(241, 81%, 54%); //background
+$violet-blue: hsla(256, 72%, 46%, 1); //(circle)
+$persian-blue : hsla(241, 72%, 46%, 0); //(circle)
+
+
+
+//size ---------------------------------------------------------------------------------
+$size: 16px;
+
+$size-xxs: calc($size / 16);
+$size-xs: calc($size / 8);
+$size-s: calc($size / 4);
+$size-m: calc($size / 2);
+
+$size-b: calc($size * 2);
+$size-l: calc($size * 4);
+$size-xl: calc($size * 8);
+$size-xxl: calc($size * 16);
+
+$size-image: $size-xxl + $size-b;
+
+$font-size: 18px;
+
+:root{ //---------------------------------------------------------------------------------
+    --color-app--back: #{$white};
+    --color-app--front: #{$white};
+
+    --color-card--back: #{$white};
+    --color-card--front-1: #{$dark-blue};
+    --color-card--front-2: #{$grayish-blue};
+
+    --radius--out: #{$size};
+    --radius--in: 10px;
+
+    --padding: #{$size};
+    --size-image: #{$size-image};
+    --size-card: calc(var(--size-image) + calc(2 * var(--padding)))
+} //---------------------------------------------------------------------------------
