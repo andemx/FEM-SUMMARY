@@ -11,7 +11,7 @@
    /* &--full{
         width:100%;
     }*/
-    &:hover{
+    &:hover,&:focus{
         background-image: linear-gradient($light-slate-blue, $light-royal-blue);
     }
 } 

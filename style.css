@@ -149,7 +149,7 @@ body {
        width:100%;
    }*/
 }
-.button:hover {
+.button:hover, .button:focus {
   background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 
